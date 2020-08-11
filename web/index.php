@@ -50,7 +50,9 @@ if (!isset($Lenguage)) {
 } else {
     switch ($message) {
         case '/start':
-           $client->sendMessage($chat_Id,$traduc['inicio'],null,$esus);
+            $traduc['MainP1_1'] = $traduc['Status'].$Status.$traduc['Main'];
+            $Main = $client->buttons('[{"text":"'.$traduc["button-stand"].'","callback_data":"Stand"},{"text":"'.$traduc["button-openshop"].'","callback_data":"OpenShop"}]',2,true);
+            $client->sendMessage($chat_Id,$traduc['MainP1_1'],'html',$Main);
             break;
     }
 }
@@ -62,12 +64,13 @@ if ($Status_Shop == true) {
 }
 $traduc['MainP1'] = $traduc['Status'].$Status.$traduc['Main'];
 $Main = $client->buttons('[{"text":"'.$traduc["button-stand"].'","callback_data":"Stand"},{"text":"'.$traduc["button-openshop"].'","callback_data":"OpenShop"}]',2,true);
-if ($query_Data == "es_es") {
-    $client->sendMessage($query_Id,$traduc['MainP1'],'html',$Main);
+
+if ($query_Data == "es_es" or $query_Data == "us_us") {
+    $client->editMessage($query_user_Id,$query_message_Id,$traduc['MainP1'],'html',$Main);
 }
 
 if ($query_Data == "Stand") {
-    $client->sendMessage($query_Id,$traduc['MainP1'],'html',$Main);
+    $client->editMessage($query_user_Id,$query_message_Id,$traduc['MainP1'],'html',$Main);
 }
 
 
