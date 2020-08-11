@@ -63,11 +63,11 @@ if ($Status_Shop == true) {
 $traduc['MainP1'] = $traduc['Status'].$Status.$traduc['Main'];
 $Main = $client->buttons('[{"text":"'.$traduc["button-stand"].'","callback_data":"Stand"},{"text":"'.$traduc["button-openshop"].'","callback_data":"OpenShop"}]',2,true);
 if ($query_Data == "es_es") {
-    $client->sendMessage($chat_Id,$traduc['MainP1'],'html',$Main);
+    $client->sendMessage($query_Id,$traduc['MainP1'],'html',$Main);
 }
 
 if ($query_Data == "Stand") {
-    $client->sendMessage($chat_Id,$traduc['MainP1'],'html',$Main);
+    $client->sendMessage($query_Id,$traduc['MainP1'],'html',$Main);
 }
 
 
