@@ -1,0 +1,55 @@
+{   "update_id":234243223,
+    "message":{
+        "message_id":6,
+        "from":{
+            "id":408448697,
+            "is_bot":false,
+            "first_name":"alessandroMrX",
+            "last_name":"Momentaneo",
+            "username":"AlexGamingDev",
+            "language_code":"it-lT"
+        },
+        "chat":{
+            "id":940012594,
+            "first_name":"alessandroMrX",
+        "last_name":"Momentaneo",
+        "username":"AlexGamingDev",
+        "type":"private"
+        },
+        "date":1507204102,
+        "text":"\/start"
+    },
+
+    "callback_query":{
+        "id":"1754273796181332412",
+        "from":{
+            "id":940012594,
+            "is_bot":false,
+            "first_name":"alessandroMrX",
+            "last_name":"Momentaneo",
+            "username":"AlexGamingDev",
+            "language_code":"it-lT"
+        },
+        "message":{
+            "message_id":111111111111111,
+            "from":{
+                "id":464684419,
+                "is_bot":true,
+                "first_name": "holaesteesminombre",
+                "username":"DevMebot"
+            },
+            "chat":{
+                "id":940012594,
+                "first_name":"alessandroMrX",
+            "last_name":"Momentaneo",
+            "username":"AlexGamingDev",
+            "type":"private"
+            },
+            "date":1508244855,
+            "text":"Test tastiera inline"
+        },
+        "chat_instance":"-5834545820090839413",
+        "data":"tresdedos"
+    }
+
+}
